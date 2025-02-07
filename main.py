@@ -17,13 +17,18 @@ def terminate():
 def start_screen():
     intro_text = ["Добро пожаловать в игру!", "",
                   "Правило только одно: ВЫЖИВАЙ ПО МАКСИМУМУ",
-                  "Победителей тут нет, только рекордстмены"]
-
+                  "Победителей тут нет, только рекордстмены",
+                  "Чтобы защитить свой дом", "",
+                  "Правила!",
+                  "Стрелка влево и стрелка вправо - передвижение игрока",
+                  "Пробел - выстрел из пушки",
+                  "+- - уменьшение/увеличение звука",
+                  "p - пауза", "m - выключение музыки"]
     fon = pygame.image.load('data/img/fon.jpg').convert()
     fon = pygame.transform.scale(fon, (800, 600))
     screen.blit(fon, (0, 0))
     font = pygame.font.Font(None, 30)
-    text_coord = 50
+    text_coord = 20
     for line in intro_text:
         string_rendered = font.render(line, True, pygame.Color('white'))
         intro_rect = string_rendered.get_rect()
