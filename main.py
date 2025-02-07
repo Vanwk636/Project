@@ -14,7 +14,6 @@ def terminate():
     pygame.quit()
     sys.exit()
 
-
 def start_screen():
     intro_text = ["Добро пожаловать в игру!", "",
                   "Правило только одно: ВЫЖИВАЙ ПО МАКСИМУМУ",
